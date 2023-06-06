@@ -5,23 +5,36 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>MyKey.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageProjectUrl>https://github.com/asulwer/tracker-enabled-dbcontext</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/frank-medium/tracker-enabled-dbcontext-EFCore6</PackageProjectUrl>
     <Version>4.1.0</Version>
-    <Authors>Aaron Sulwer</Authors>
-    <Copyright>2018</Copyright>
+    <Authors>Frank Medium</Authors>
+    <Copyright>2023</Copyright>
     <PackageTags>SQL, Database, EntityFramework</PackageTags>
-    <Company>Aaron Sulwer</Company>
+    <Company>Frank Medium</Company>
     <Description>Use this to extend Entity Framework functionality to store changes in database. This is very useful for auditing purpose. It stores WHO changed WHAT and WHEN. It will let you choose which tables and columns you want to track with the help of attributes.
 
 Forked from Bilal Fazlani to support EF Core 6</Description>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <FileVersion>4.1.0.0</FileVersion>
+    <RepositoryUrl>https://github.com/frank-medium/tracker-enabled-dbcontext-EFCore6</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageId>TrackerEnabledDbContext.EFCore6</PackageId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE.md" Pack="True" PackagePath=""/>
+	</ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
   </ItemGroup>
-
-  <Import Project="..\TrackerEnabledDbContext\TrackerEnabledDbContext.projitems" Label="Shared" />
 
 </Project>

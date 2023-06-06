@@ -12,11 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TrackerEnabledDbContext", "TrackerEnabledDbContext\TrackerEnabledDbContext.shproj", "{CF150C9E-BDA4-4438-9493-6F10CAEC07A6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackerEnabledDbContext.Core", "TrackerEnabledDbContext.Core\TrackerEnabledDbContext.Core.csproj", "{3A87F2DC-A5A0-43D6-B17C-8C00DD962A91}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackerEnabledDbContext.Core.Identity", "TracerEnabledDbContext.Core.Identity\TrackerEnabledDbContext.Core.Identity.csproj", "{96A06DFB-2B24-4E13-A069-04B09358DCCE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleLogMaker.Core", "Tests\SampleLogMaker.Core\SampleLogMaker.Core.csproj", "{C3636C0C-016E-4BB5-8549-E6E13E3B2331}"
 EndProject
@@ -26,10 +22,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrackerEnabledDbContext.Cor
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		TrackerEnabledDbContext\TrackerEnabledDbContext.projitems*{3a87f2dc-a5a0-43d6-b17c-8c00dd962a91}*SharedItemsImports = 5
 		Tests\TrackerEnabledDbContext.Tests\TrackerEnabledDbContext.Tests.projitems*{6ef84a00-0441-41bd-9378-67144c064928}*SharedItemsImports = 13
-		TrackerEnabledDbContext\TrackerEnabledDbContext.projitems*{96a06dfb-2b24-4e13-a069-04b09358dcce}*SharedItemsImports = 5
-		TrackerEnabledDbContext\TrackerEnabledDbContext.projitems*{cf150c9e-bda4-4438-9493-6f10caec07a6}*SharedItemsImports = 13
 		Tests\TrackerEnabledDbContext.Tests\TrackerEnabledDbContext.Tests.projitems*{d6cded19-531f-4777-8261-2f3cc55823df}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +34,6 @@ Global
 		{3A87F2DC-A5A0-43D6-B17C-8C00DD962A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A87F2DC-A5A0-43D6-B17C-8C00DD962A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A87F2DC-A5A0-43D6-B17C-8C00DD962A91}.Release|Any CPU.Build.0 = Release|Any CPU
-		{96A06DFB-2B24-4E13-A069-04B09358DCCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96A06DFB-2B24-4E13-A069-04B09358DCCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96A06DFB-2B24-4E13-A069-04B09358DCCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96A06DFB-2B24-4E13-A069-04B09358DCCE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C3636C0C-016E-4BB5-8549-E6E13E3B2331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C3636C0C-016E-4BB5-8549-E6E13E3B2331}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3636C0C-016E-4BB5-8549-E6E13E3B2331}.Release|Any CPU.ActiveCfg = Release|Any CPU
