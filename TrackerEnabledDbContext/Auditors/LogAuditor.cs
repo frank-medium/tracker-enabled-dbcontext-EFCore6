@@ -36,7 +36,7 @@ namespace TrackerEnabledDbContext.Core.Common.Auditors
             DateTime changeTime = DateTime.UtcNow;
 
             //changed to static class by Aaron Sulwer 3/16/2018
-            List<PropertyConfigurationKey> keyNames = (context as DbContext).GetKeyNames(entityType).ToList();
+            List<PropertyConfigurationKey> keyNames = (context as DbContext).GetKeyNames(_dbEntry).ToList();
 
             var newlog = new AuditLog
             {
