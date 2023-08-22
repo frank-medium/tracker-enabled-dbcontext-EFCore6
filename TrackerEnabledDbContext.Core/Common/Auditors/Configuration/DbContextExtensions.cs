@@ -14,7 +14,7 @@ namespace TrackerEnabledDbContext.Core.Common.Configuration
         {
             var entityType = entityEntry.Entity.GetType();
 
-            var fullName = entityType.FullName;
+            var fullName = entityType.BaseType.FullName;
             return entityEntry.Metadata.FindPrimaryKey().Properties.Select(x => new PropertyConfigurationKey(x.Name, fullName));
         }
     }

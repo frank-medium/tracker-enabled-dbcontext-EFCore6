@@ -43,7 +43,7 @@ namespace TrackerEnabledDbContext.Core.Common.Auditors
                 UserName = userName?.ToString(),
                 EventDateUTC = changeTime,
                 EventType = eventType,
-                TypeFullName = entityType.FullName,
+                TypeFullName = entityType.BaseType.FullName,
                 RecordId = GetPrimaryKeyValuesOf(_dbEntry, keyNames).ToString()
             };
 

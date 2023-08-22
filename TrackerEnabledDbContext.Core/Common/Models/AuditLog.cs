@@ -21,7 +21,7 @@ namespace TrackerEnabledDbContext.Common.Models
         public string UserName { get; set; }
 
         [Required]
-        public DateTime EventDateUTC { get; set; }
+        public DateTimeOffset EventDateUTC { get; set; }
 
         [Required]
         public EventType EventType { get; set; }
