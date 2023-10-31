@@ -74,14 +74,14 @@ namespace TrackerEnabledDbContext.Core.Common.Auditors
         {
             object originalValue = null;
 
-            //if (GlobalTrackingConfig.DisconnectedContext)
-            //{
+            if (GlobalTrackingConfig.DisconnectedContext)
+            {
                 originalValue = DbEntry.GetDatabaseValues().GetValue<object>(propertyName);
-            //}
-            //else
-            //{
-            //    originalValue = DbEntry.Property(propertyName).OriginalValue;
-            //}
+            }
+            else
+            {
+                originalValue = DbEntry.Property(propertyName).OriginalValue;
+            }
 
             return originalValue;
         }
